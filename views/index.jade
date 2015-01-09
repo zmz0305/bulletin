@@ -6,9 +6,9 @@ html
     script(src='//code.jquery.com/jquery-1.11.0.min.js')
     script(src='/javascripts/socket.io.js')
     script(src='/javascripts/index.js')
-    title Super Awesome Chatroom
+    title YUE
   body
-    h1 Super Awesome Chatroom
+    h1 YUE?
     div
       div.inlineBlock
         span Your name:
@@ -22,3 +22,10 @@ html
         br
         div#participants
     div#messages
+    div#log
+      each item in log
+        b #{item.name}
+        br
+        | #{item.message}
+        hr
+      

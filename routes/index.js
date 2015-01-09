@@ -4,9 +4,9 @@ var router = express.Router();
 var _ = require('underscore');
 
 /* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-});
+// router.get('/', function(req, res) {
+//   res.render('index', { title: 'Express' });
+// });
 
 //POST method to create a chat message
 
