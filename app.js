@@ -186,7 +186,7 @@ routes.get("/", function(req, res){
     });
 });
 
-http.listen(8080, app.get("ipaddr"), function () {
+http.listen(app.get("port"), app.get("ipaddr"), function () {
     console.log("Server up and running. Go to http://" + app.get("ipaddr") + ":" + app.get("port"));
 });
 
